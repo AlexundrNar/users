@@ -1,0 +1,22 @@
+@import "./variables.scss";
+
+.sort {
+  position: absolute;
+  width: 152px;
+  height: 1028px;
+  left: -152px;
+  background-color: $color-bgSort;
+  
+  p {
+    position: relative;
+    top: 35px; left: 20px;
+    font-size: $font-nav;
+    line-height: 14px;
+  }
+
+  button {
+    @include buttonForm($color-blueButton);
+    top: 45px; left: 20px;
+    margin-bottom: 10px;
+  }
+}

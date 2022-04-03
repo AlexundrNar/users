@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Roboto&display=swap');
+
+
+$color-black: #000000;
+$color-white:#FFFFFF;
+$color-greyFio: #A3A3A3;
+$color-greyReadParams: #000000;
+$color-blueButton: #4B51EF;
+$color-greenButton: #52CF4F;
+$color-greyButton: #AFAFAF;
+$color-redInvalid: #D91313;
+
+$color-background: #E5E5E5;
+$color-bgSort: #BDBDBD;
+$color-bgList: #F3F3F3;
+
+
+// font-size
+$font-params: 8px;
+$font-paramsText: 10px;
+$font-userlist: 11px;
+$font-nav: 12px;
+$font-header: 14px;
+
+
+// h1
+@mixin h1Header {
+  position: relative;
+  top: 19px; left: 34px;
+  font-weight: 700;
+  font-size: $font-header;
+  line-height: 16px;
+}
+
+// button
+@mixin buttonForm($color) {
+  position: relative;
+  border-radius: 5px;
+  border: 0px;
+  color: $color-white;
+  background-color: $color;
+  padding: 5px;
+  padding-inline: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+.users {
+    
+  h1 {
+    @include h1Header
+  }
+
+  p {
+    position: relative;
+    top: 20px; right: 59px;
+    text-align: right;
+    font-size: $font-nav;
+    line-height: 14px;
+  }
+
+  img {
+    position: absolute;
+    left: 43%; top: 5%;
+  }
+}
+
+.userItem {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  top: 36px; left: 34px;
+  width: 420px;
+  height: 73px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  background-color: $color-bgList;
+
+  p {
+    position: relative;
+    text-align: left;
+    padding: 2.5px;
+    top: 10px; left: 10px; right: 10px;
+    font-size: $font-userlist;
+    line-height: 13px;
+
+    span {
+      color: $color-greyFio;
+    }
+  }
+  
+  button {
+    @include buttonForm($color-bgList);
+    padding-right: 10px;
+    top: -12px; left: 325px;
+    color: $color-blueButton;
+  }
+
+}
+

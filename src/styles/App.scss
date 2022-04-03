@@ -1,0 +1,27 @@
+@import "./variables.scss";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0; padding: 0; 
+}
+
+body {
+  font-family: 'Roboto' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: $color-background;
+}
+
+.container {
+  width: 665px;
+  left: 225px;
+}
+
+.pages {
+  position: absolute;
+  width: 513px;
+  height: 1028px;
+  left: 377px;
+  top: 87px;
+  background-color: $color-white; 
+}
